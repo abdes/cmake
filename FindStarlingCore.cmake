@@ -11,8 +11,12 @@
 #
 
 include("GenericFindDependency")
-option(optional_ENABLE_TESTS "" OFF)
+
+option(starling_core_ENABLE_TESTS "" OFF)
+option(starling_core_ENABLE_TEST_LIBS "" OFF)
+option(starling_core_ENABLE_EXAMPLES "" OFF)
+
 GenericFindDependency(
-  TARGET akrzemi1::optional
-  SYSTEM_INCLUDES
+  TARGET starling-core-utils
+  SOURCE_DIR starling-core
 )
